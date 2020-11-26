@@ -5,6 +5,10 @@ import TheMovieDatabaseApi
 import XCTest
 
 final class MoviesViewModelTests: XCTestCase {
+  func testFail() {
+    XCTFail()
+  }
+
   func testDefaultViewModel_RequestError() {
     let movieRepo = MovieRepo.mock()
     let error = URLError(.badServerResponse)
